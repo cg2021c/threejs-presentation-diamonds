@@ -1,4 +1,4 @@
-# Diamond Team : Animations and Camera Movements in Three.Js
+# Team Diamonds: Animations and Camera Movements in Three.Js
 
 |Name|Student ID|
 |:----------:|:-----------:|
