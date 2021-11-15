@@ -39,10 +39,9 @@ The following links show a code and a preview of this example:
 
 <a href="https://cg2021c.github.io/threejs-presentation-diamonds/Learn-Three.js-Third-Edition-master/src/chapter-09/05-fly-controls-camera.html"><h3>Preview</h3></a>
 
-# Controls
+## Controls
 
-You can control the camera with THREE.FlyControls in the
-following manner:
+You can control the camera with THREE.FlyControls in the following manner:
 
 |Control|Action|
 |-------|------|
@@ -59,6 +58,7 @@ following manner:
 |G|Roll left|
 |E|Roll right|
 
+## Properties
 
 There are a couple of properties that you can use to fine-tune how the camera acts. Here are some of their properties and what is controls:
 
