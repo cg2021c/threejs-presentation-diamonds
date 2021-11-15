@@ -1,4 +1,4 @@
-# Creating Animation using Blender
+# Creating Bones Animation using Blender
 
  Start with an animation created in Blender and export the file using the Three.js exporter. When exporting the file using the Three.js exporter, make sure that the following 
 properties are checked to export the animation as a skeletal animation instead of a morph animation. With a skeletal animation, the movements of the bones are exported, which we 
