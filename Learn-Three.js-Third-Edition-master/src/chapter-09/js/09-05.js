@@ -11,8 +11,7 @@ function init() {
   flyControls.movementSpeed = 25;
   flyControls.domElement = document.querySelector("webgl-output");
   flyControls.rollSpeed = Math.PI / 24;
-  flyControls.autoForward = true;
-  flyControls.dragToLook = false;
+  flyControls.dragToLook = true;
 
   var loader = new THREE.OBJLoader();
   loader.load("../../assets/models/city/city.obj", function (object) {
