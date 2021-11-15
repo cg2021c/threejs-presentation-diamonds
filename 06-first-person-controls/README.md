@@ -20,6 +20,8 @@ fpControls.lon = -150;
 fpControls.lat = 120;
 ```
 
+The following links show a code and a preview of this example:
+
 <a href="https://github.com/cg2021c/threejs-presentation-diamonds/blob/main/Learn-Three.js-Third-Edition-master/src/chapter-09/06-first-person-camera.html"><h3>Code</h3></a>
 
 <a href="https://cg2021c.github.io/threejs-presentation-diamonds/Learn-Three.js-Third-Edition-master/src/chapter-09/06-first-person-camera.html"><h3>Preview</h3></a>
