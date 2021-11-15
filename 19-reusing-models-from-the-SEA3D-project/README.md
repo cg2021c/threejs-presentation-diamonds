@@ -1,7 +1,7 @@
 # Reusing models from the SEA3D project
 SEA3D is an open source project that can be used to create games, make
 models, add animations, and much more.  For now, this is how you can use the models from this project 
-and visualize them in Three.js. An example of this is shown in `17-animation-from-bvh.html`.
+and visualize them in Three.js. An example of this is shown in `18-animation-from-sea.html`.
 
 <a href="https://github.com/cg2021c/threejs-presentation-diamonds/blob/main/Learn-Three.js-Third-Edition-master/src/chapter-09/18-animation-from-sea.html"><h3>Code</h3></a>
  
