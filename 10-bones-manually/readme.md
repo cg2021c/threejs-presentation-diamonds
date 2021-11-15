@@ -4,13 +4,13 @@ Morph animations are very straightforward. Three.js knows all the target vertex 
 
 ```
 loader.load('../../assets/models/hand/hand-1.js', function (geometry, mat) {
-var mat = new THREE.MeshLambertMaterial({color: 0xF0C8C9, skinning: true});
-mesh = new THREE.SkinnedMesh(geometry, mat);
-mesh.scale.set(15,15,15);
-mesh.position.x = -5;
-mesh.rotateX(0.5*Math.PI);
-mesh.rotateZ(0.3*Math.PI);
-scene.add(mesh);
-startAnimation();
+  var mat = new THREE.MeshLambertMaterial({color: 0xF0C8C9, skinning: true});
+  mesh = new THREE.SkinnedMesh(geometry, mat);
+  mesh.scale.set(15,15,15);
+  mesh.position.x = -5;
+  mesh.rotateX(0.5*Math.PI);
+  mesh.rotateZ(0.3*Math.PI);
+  scene.add(mesh);
+  startAnimation();
 });
 ```
