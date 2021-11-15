@@ -48,8 +48,6 @@ There are a couple of properties that you can use to fine-tune how the camera ac
 
 |Property|Result|
 |--------|------|
-|Property|Result|
-|--------|------|
 |.enabled|Whether controls are enabled|
 |.autoForward|Whether or not the camera is automatically moved forward|
 |.constrainVertical|Whether or not looking around is vertically constrained by [.verticalMin, .verticalMax]|
