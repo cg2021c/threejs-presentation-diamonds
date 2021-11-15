@@ -2,6 +2,10 @@
 
 Morph animations are very straightforward. Three.js knows all the target vertex positions and only needs to transition each vertex from one position to the next. For bones and skinning, it becomes a bit more complex. When you use bones for animation, you move the bone, and Three.js has to determine how to translate the attached skin (a set of vertices) accordingly. 
 
+<a href="https://github.com/cg2021c/threejs-presentation-diamonds/blob/main/Learn-Three.js-Third-Edition-master/src/chapter-10/10-bones-manually.html"><h3>Code</h3></a>
+
+<a href="https://cg2021c.github.io/threejs-presentation-diamonds/Learn-Three.js-Third-Edition-master/src/chapter-10/10-bones-manually.html"><h3>Preview</h3></a>
+
 For this example, we use a model that was exported from Blender to the Three.js format (hand-1.js in the models/hand folder). This is a model of a hand, complete with a set of bones. By moving the bones around, we can animate the complete model. Let’s first look at how we loaded the model:
 
 ```
