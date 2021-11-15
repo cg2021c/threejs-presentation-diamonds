@@ -43,18 +43,18 @@ When you open the example preview in the link that mentioned earlier, you see th
 
 ```
 var onUpdate = function () {
-var pos = this.pos;
-// rotate the fingers
-mesh.skeleton.bones[5].rotation.set(0, 0, pos);
-mesh.skeleton.bones[6].rotation.set(0, 0, pos);
-mesh.skeleton.bones[10].rotation.set(0, 0, pos);
-mesh.skeleton.bones[11].rotation.set(0, 0, pos);
-mesh.skeleton.bones[15].rotation.set(0, 0, pos);
-mesh.skeleton.bones[16].rotation.set(0, 0, pos);
-mesh.skeleton.bones[20].rotation.set(0, 0, pos);
-mesh.skeleton.bones[21].rotation.set(0, 0, pos);
-// rotate the wrist
-mesh.skeleton.bones[1].rotation.set(pos, 0, 0);
+  var pos = this.pos;
+  // rotate the fingers
+  mesh.skeleton.bones[5].rotation.set(0, 0, pos);
+  mesh.skeleton.bones[6].rotation.set(0, 0, pos);
+  mesh.skeleton.bones[10].rotation.set(0, 0, pos);
+  mesh.skeleton.bones[11].rotation.set(0, 0, pos);
+  mesh.skeleton.bones[15].rotation.set(0, 0, pos);
+  mesh.skeleton.bones[16].rotation.set(0, 0, pos);
+  mesh.skeleton.bones[20].rotation.set(0, 0, pos);
+  mesh.skeleton.bones[21].rotation.set(0, 0, pos);
+  // rotate the wrist
+  mesh.skeleton.bones[1].rotation.set(pos, 0, 0); 
 };
 ```
 
