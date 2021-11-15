@@ -34,6 +34,15 @@ In this opportunity, we will learn about **Animations**. But not only that, we w
    - Morph targets manually
    - Bones manually
 4. Creating Animations Using External Models
+   - Animation from blender
+   - Animation from COLLADA
+   - Animation from MD2
+   - Animation from glTF
+   - Visualize motions captured models using the fbxLoader
+   - Loading legacy DirectX models through the xLoader
+   - Visualizing a skeleton with the BVHLoader
+   - Reusing models from the SEA3D project
+
 
 With that said, let's **_Roll_**
 
