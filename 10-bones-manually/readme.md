@@ -1,6 +1,6 @@
 # Bones Manually
 
-Morph animations are very straightforward. Three.js knows all the target vertex positions and only needs to transition each vertex from one position to the next. For bones and skinning, it becomes a bit more complex. When you use bones for animation, you move the bone, and Three.js has to determine how to translate the attached skin (a set of vertices) accordingly. 
+Morph animations are very straightforward. Three.js knows all the target vertex positions and only needs to transition each vertex from one position to the next. For bones and skinning, it becomes a bit more complex. When you use bones for animation, you move the bone, and Three.js has to determine how to translate the attached skin (a set of vertices) accordingly. The example is in the link below :
 
 <a href="https://github.com/cg2021c/threejs-presentation-diamonds/blob/main/Learn-Three.js-Third-Edition-master/src/chapter-09/10-bones-manually.html"><h3>Code</h3></a>
 
@@ -36,3 +36,26 @@ function startAnimation() {
   tween.start();
 }
 ```
+
+With this tween, we transition the pos variable from -1.5 to 0. We’ve also setthe yoyo property to true, which causes our animation to run in reverse the nexttime it is run, and, to make sure our animation keeps running, we setrepeat to Infinity. You can also see that we specify an onUpdate method. This method is used to position the individual bones, and we’ll look at that next.
+
+When you open the example preview in the link that mentioned earlier, you see the hand making a grab-like motion. We did this by setting the z rotation of the finger bones in the onUpdate method that is called from our tween animation, as follows:
+
+```
+var onUpdate = function () {
+var pos = this.pos;
+// rotate the fingers
+mesh.skeleton.bones[5].rotation.set(0, 0, pos);
+mesh.skeleton.bones[6].rotation.set(0, 0, pos);
+mesh.skeleton.bones[10].rotation.set(0, 0, pos);
+mesh.skeleton.bones[11].rotation.set(0, 0, pos);
+mesh.skeleton.bones[15].rotation.set(0, 0, pos);
+mesh.skeleton.bones[16].rotation.set(0, 0, pos);
+mesh.skeleton.bones[20].rotation.set(0, 0, pos);
+mesh.skeleton.bones[21].rotation.set(0, 0, pos);
+// rotate the wrist
+mesh.skeleton.bones[1].rotation.set(pos, 0, 0);
+};
+```
+
+Whenever this update method is called, the relevant bones are set to the **pos** position. To determine which bone you need to move, it is a good idea to print out the **mesh.skeleton** property to the console. This will list all the bones and their names.
