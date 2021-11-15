@@ -23,12 +23,12 @@ The one thing you need to specify to make sure the model is updated is set the s
 
 ```
 function startAnimation() {
-tween = new TWEEN.Tween({pos: -1.5})
-.to({pos: 0}, 3000)
-.easing(TWEEN.Easing.Cubic.InOut)
-.yoyo(true)
-.repeat(Infinity)
-.onUpdate(onUpdate);
-tween.start();
+  tween = new TWEEN.Tween({pos: -1.5})
+  .to({pos: 0}, 3000)
+  .easing(TWEEN.Easing.Cubic.InOut)
+  .yoyo(true)
+  .repeat(Infinity)
+  .onUpdate(onUpdate);
+  tween.start();
 }
 ```
