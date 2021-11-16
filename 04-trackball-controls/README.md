@@ -42,6 +42,7 @@ with **requestAnimationFrame**, we can expect 60 fps, but this isn’t guarantee
 Depending on all kinds of external factors, the frame rate might change. To
 make sure the camera turns and rotates smoothly, we need to pass in the exact
 elapsed time.
+
 A working example for this can be found in 04-trackball-controls-camera.html.
 The following links show a code and a preview of this example:
 
